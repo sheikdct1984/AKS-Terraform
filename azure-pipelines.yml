@@ -20,6 +20,7 @@ steps:
   inputs:
     command: 'plan'
     environmentServiceName: 'AkS-Terrform-SPN'
+    providerAzureRmSubscriptionId: '2dbfc2cf-3d3c-40ad-a4b7-f2e9a6558908'
     allowTelemetryCollection: false
 
 
