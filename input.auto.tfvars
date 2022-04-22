@@ -12,7 +12,7 @@ subnetcidr = ["10.240.0.0/16"]
 
 keyvault_rg = "EUN-SEG-AUT-POC-RG"
 
-keyvault_name = "aksdemocluster-kv"
+keyvault_name = "akspoc-kv"
 
 azure_region = "northeurope"
 
