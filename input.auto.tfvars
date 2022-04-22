@@ -6,29 +6,29 @@ clientidkvsecret = "spn-id"
 
 spnkvsecret = "spn-secret"
 
-vnetcidr = ["10.0.0.0/24"]
+vnetcidr = ["10.0.0.0/8"]
 
-subnetcidr = ["10.0.0.0/25"]
+subnetcidr = ["10.240.0.0/16"]
 
-keyvault_rg = "aksdemo-rg"
+keyvault_rg = "EUN-SEG-AUT-POC-RG"
 
 keyvault_name = "aksdemocluster-kv"
 
-azure_region = "australiaeast"
+azure_region = "northeurope"
 
-resource_group = "aksdemocluster-rg"
+resource_group = "EUN-SEG-AUT-POC-RG"
 
-cluster_name = "aksdemocluster"
+cluster_name = "eun-seg-aks-01"
 
-dns_name = "aksdemocluster"
+dns_name = "eun-seg-aks-01"
 
-admin_username = "aksuser"
+admin_username = "superadmin"
 
-kubernetes_version = "1.21.7"
+kubernetes_version = "1.22.6"
 
 agent_pools = {
       name            = "pool1"
-      count           = 2
-      vm_size         = "Standard_D2_v2"
+      count           = 1
+      vm_size         = "Standard_D4_v3"
       os_disk_size_gb = "30"
     }
