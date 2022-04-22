@@ -23,5 +23,13 @@ steps:
     providerAzureRmSubscriptionId: '2dbfc2cf-3d3c-40ad-a4b7-f2e9a6558908'
     allowTelemetryCollection: false
 
+- task: TerraformCLI@0
+  displayName: Terrform Apply
+  inputs:
+    command: 'apply'
+    environmentServiceName: 'AzureRMAPP-SPN'
+    providerAzureRmSubscriptionId: '2dbfc2cf-3d3c-40ad-a4b7-f2e9a6558908'
+    allowTelemetryCollection: false
+
 
 
